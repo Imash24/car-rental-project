@@ -1,0 +1,231 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+/* Welcome Section Styling */
+.welcome {
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  color: #f1c40f; /* Change this to match your desired color */
+  font-size: 3rem;
+}
+
+#welcome-typed-text {
+  font-size: 1.5rem;
+  color: #ffffff; /* Adjust to match the contrast */
+}
+
+/* Navbar Styling */
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.navbar {
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px; /* Space out the items */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem; /* Make links larger */
+  font-weight: bold; /* Optional: Make text bold */
+  color: #212529; /* Default link color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f1c40f; /* Change color on hover */
+}
+
+.nav-link.active {
+  position: relative;
+  color: #f1c40f !important; /* Change color for active link */
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust position as needed */
+  width: 100%;
+  height: 2px; /* Thickness of the solid line */
+  background-color: #f1c40f; /* Line color */
+  animation: slideIn 0.5s ease forwards;
+}
+
+.logo {
+  width: 250px; /* Adjust logo size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Carousel Styling */
+/* .container-inner {
+  height: 800px;
+}
+
+.carousel-image {
+  height: 800px;
+} */
+
+#carouselExampleCaptions {
+  max-width: 1400px; /* Adjust width as needed */
+  margin: auto; /* Center the carousel */
+  background-color: transparent;
+}
+
+.carousel-item img {
+  height: 600px; /* Set the desired height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  width: 100%; /* Ensure the image takes the full width of the carousel */
+}
+
+/* value- proposition styling */
+.value-proposition {
+  background-color: #f8f9fa; /* Light background */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.value-proposition h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.value-proposition p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+  transition: box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  color: #f1c40f; /* yellow */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* learnmore button */
+
+.learn-more {
+  background-color: #f1c40f; /* Blue button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Package Details Section */
+.package-detials {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  background-color: #ffffffb1;
+  width: auto;
+}
+
+.card-body {
+  color: #fff;
+  background-color: #f1c40f;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #333; /* Gray */
+  color: #fff;
+}
+
+.hero h1 span {
+  color: #f1c40f; /* Yellow */
+}
+
+/* Button Styling */
+.btn {
+  background-color: #f1c40f;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #001b7f;
+  color: #fff;
+}
+
+/* Footer Styling */
+footer {
+  border-top: #212529 2px solid;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
